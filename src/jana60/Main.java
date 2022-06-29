@@ -1,6 +1,7 @@
 package jana60;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -44,11 +45,11 @@ public class Main {
 			
 		}while(!flag);
 
-		for(int i = 0; i < listaDiDesideri.size(); i++) {
-			
-			System.out.println("Il desiderio numero " + (i + 1) + " è " + listaDiDesideri.get(i));
-			
-		}
+		Collections.sort(listaDiDesideri);
+		
+		System.out.println("La tua lista di desideri ordinata è: ");
+		System.out.println(listaDiDesideri);
+		
 		
 	}
 
